@@ -1,0 +1,51 @@
+body{
+    margin-top: 50px;
+}
+
+body::before{
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    position: fixed;
+}
+/* h1{
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+p{
+    color: blueviolet;
+    font-size: 50px;
+} */
+
+@media (min-width:576px) {
+    body::before{
+    content:"sm"
+    }
+}
+
+@media (min-width:768px) {
+    body::before{
+    content:"md"
+    }
+}
+
+@media (min-width:992px) {
+    body::before{
+    content:"lg"
+    }
+}    
+
+
+@media (min-width:1200px) {
+    body::before{
+    content:"xl"
+    }
+}
+
+@media (min-width:1400px) {
+    body::before{
+        content:"xxl"
+    }
+}
