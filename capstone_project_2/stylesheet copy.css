@@ -1,0 +1,82 @@
+
+body {
+    display: grid;
+}
+.front-container{
+    background:linear-gradient(to right, rgb(95, 146, 218), rgb(201, 132, 201), pink) ;
+    display: flex;
+}
+.image3d{
+    display: grid;
+    justify-content: flex-end;
+}
+.container{
+    font-family: "Sacramento", cursive;
+}
+.tile-text{
+    font-family: "Sacramento", cursive;
+    text-align: center;
+}
+
+.mylogo{
+    border-radius: 50%;
+}
+.d-block{
+    border-radius: 40%;
+}
+
+.skill{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.parent-skill{
+    display: grid;
+    gap: 30px;
+}
+
+.skill-image{
+    height:200px ;
+    width:250px;
+    border-radius: 10%;
+}
+
+h1 {
+    font-family: Courier, monospace;
+    color: white;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.top-container,.profile,.about,.bottom-container {
+    background:linear-gradient(to right, rgb(95, 146, 218), rgb(201, 132, 201), pink) ;
+    display: grid;
+    color:white;
+    
+}
+
+@media (max-width:600px){
+    .skill{
+        display:grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        gap: 10px;
+}
+    .skill-image{
+        height:100px ;
+        width:150px;
+        border-radius: 10%;
+        padding: 0%;
+    }
+    .top-container,.profile,.about,.bottom-container {
+        background:linear-gradient(to right, rgb(158, 221, 129), rgb(216, 210, 142), rgb(80, 223, 219)) ;
+        display: grid;
+        color:rgb(0, 0, 0);
+    }   
+
+}  
